@@ -11,6 +11,7 @@ blue = [40, 40, 220]
 
 
 def update(value):
+    clear()
     if value < 1:
         clear()
     if value == 1:
