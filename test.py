@@ -10,6 +10,8 @@ def main():
         for light in range(7):
             set_pixel(light, color, color, color)
             show()
+            time.sleep(0.1)
+
         clear()
 
 
