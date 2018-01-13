@@ -12,7 +12,6 @@ def main():
                 for led in range(8):
                     set_pixel(led, r, g, b)
                     show()
-                    time.sleep(0.01)
 #        clear()
 
 
