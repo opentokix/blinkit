@@ -64,6 +64,7 @@ def main():
     for i in range(100):
         value = math.sin(i / 5) * 4 + 4
         sys.stdout.write(str(int(value)))
+        sys.stdout.flush()
         update(int(value))
         time.sleep(1)
 
