@@ -7,7 +7,7 @@ import time
 def main():
     set_brightness(0.1)
     for color in range(255):
-        for light in range(7):
+        for light in range(8):
             set_pixel(light, color, color, color)
             show()
             time.sleep(0.1)
