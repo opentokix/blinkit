@@ -63,7 +63,7 @@ def update(value):
 def main():
     for i in range(100):
         value = math.cos(float(i) / 10.0) * 4.0 + 4.0
-        print "%d: %f" % (i, value)
+        print "%d: %f %d" % (i, value, int(value))
         update(int(value))
         time.sleep(0.3)
 
