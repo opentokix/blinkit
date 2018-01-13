@@ -1,16 +1,17 @@
 #!/usr/bin/env python
+"""Simple program for a vu POC."""
 
-from blinkt import set_pixel, set_brightness, show, clear
+from blinkt import set_pixel, show, clear
 import time
 import math
-import sys
-
-red = [220, 40, 40]
-green = [40, 220, 40]
-blue = [40, 40, 220]
 
 
 def update(value):
+    """Update the array of leds with some predefined colors."""
+    red = [220, 40, 40]
+    green = [40, 220, 40]
+    blue = [40, 40, 220]
+
     clear()
     if value < 1:
         clear()
@@ -62,11 +63,11 @@ def update(value):
 
 
 def main():
+    """Concept code, cos value between 0 and 8."""
     for i in range(1000):
         value = math.cos(float(i) / 10.0) * 4.0 + 4.1
         update(int(value))
         time.sleep(0.01)
-
 
 if __name__ == '__main__':
     main()
