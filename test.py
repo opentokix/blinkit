@@ -6,11 +6,11 @@ import time
 
 def main():
     set_brightness(0.1)
-    clear()
     for color in range(255):
-        for brightness in range(255):
-            set_pixel(brightness, color, color, color)
+        for light in range(7):
+            set_pixel(light, color, color, color)
             show()
+        clear()
 
 
 
