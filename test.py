@@ -12,7 +12,7 @@ def main():
 
     set_pixel(0, blue[0], blue[1], blue[2])
     set_pixel(1, blue[0], blue[1], blue[2])
-    set_pixel(2, green[0], green[1], green[2])
+    set_pixel(2, blue[0], blue[1], blue[2])
     set_pixel(3, green[0], green[1], green[2])
     set_pixel(4, green[0], green[1], green[2])
     set_pixel(5, green[0], green[1], green[2])
