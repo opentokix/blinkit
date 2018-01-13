@@ -85,7 +85,7 @@ def main():
     for i in range(1000):
         value = math.cos(float(i) / 10.0) * 4.0 + 4.1
         update(int(value))
-        time.sleep(0.001)
+        time.sleep(0.0005)
 
 if __name__ == '__main__':
     main()
