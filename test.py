@@ -13,7 +13,7 @@ def main():
 
     set_pixel(0, red[0], red[1], red[2])
     show()
-    sleep(10)
+    time.sleep(10)
 
 
 
