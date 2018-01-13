@@ -11,7 +11,7 @@ blue = [40, 40, 200]
 
 def main():
 
-    set_pixel(0, red)
+    set_pixel(0, red[0], red[1], red[2])
     show()
 
 
