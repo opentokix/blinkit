@@ -76,7 +76,7 @@ def update(value):
         lit(4, 'green')
         lit(5, 'green')
         lit(6, 'red')
-        lit(7, 'white')
+        lit(7, 'bright_red')
     show()
 
 
