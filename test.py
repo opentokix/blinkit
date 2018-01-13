@@ -63,7 +63,7 @@ def main():
     for i in range(100):
         value = math.sin(i) * 4.5 + 4
         update(int(value))
-        time.sleep(0.05)
+
 
 
 if __name__ == '__main__':
