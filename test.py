@@ -63,7 +63,7 @@ def update(value):
 def main():
     for i in range(100):
         value = math.sin(i / 5) * 4 + 4
-        sys.stdout.write(int(value))
+        sys.stdout.write(str(int(value)))
         update(int(value))
         time.sleep(1)
 
