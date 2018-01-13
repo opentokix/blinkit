@@ -3,6 +3,7 @@
 from blinkt import set_pixel, set_brightness, show, clear
 import time
 import math
+import sys
 
 red = [220, 40, 40]
 green = [40, 220, 40]
@@ -62,7 +63,7 @@ def update(value):
 def main():
     for i in range(100):
         value = math.sin(i / 5) * 4 + 4
-        print int(value)
+        sys.stdout.write(int(value))
         update(int(value))
         time.sleep(1)
 
