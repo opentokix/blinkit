@@ -66,7 +66,7 @@ def main():
         sys.stdout.write(str(int(value)))
         sys.stdout.flush()
         update(int(value))
-        time.sleep(1)
+        time.sleep(0.3)
 
 
 if __name__ == '__main__':
