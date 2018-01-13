@@ -6,59 +6,75 @@ import time
 import math
 
 
-def update(value):
-    """Update the array of leds with some predefined colors."""
+def lit(led, color):
+    """Set color for pixel."""
     red = [220, 40, 40]
     green = [40, 220, 40]
     blue = [40, 40, 220]
 
+    if color == 'red':
+        set_pixel(led, red[0], red[1], red[2])
+    if color == 'green':
+        set_pixel(led, green[0], green[1], green[2])
+    if color == 'blue':
+        set_pixel(led, blue[0], blue[1], blue[2])
+    if color == 'white':
+        set_pixel(led, 255, 255, 255)
+    if color == 'dark_grey':
+        set_pixel(led, 20, 20, 20)
+    if color == 'grey':
+        set_pixel(led, 80, 80, 80)
+
+
+def update(value):
+    """Update the array of leds with some predefined colors."""
     clear()
     if value < 1:
         clear()
     if value == 1:
-        set_pixel(0, blue[0], blue[1], blue[2])
+        lit(0, 'blue')
     if value == 2:
-        set_pixel(0, blue[0], blue[1], blue[2])
-        set_pixel(1, blue[0], blue[1], blue[2])
+        lit(0, 'blue')
+        lit(1, 'blue')
     if value == 3:
-        set_pixel(0, blue[0], blue[1], blue[2])
-        set_pixel(1, blue[0], blue[1], blue[2])
-        set_pixel(2, blue[0], blue[1], blue[2])
+        lit(0, 'blue')
+        lit(1, 'blue')
+        lit(2, 'green')
     if value == 4:
-        set_pixel(0, blue[0], blue[1], blue[2])
-        set_pixel(1, blue[0], blue[1], blue[2])
-        set_pixel(2, blue[0], blue[1], blue[2])
-        set_pixel(3, green[0], green[1], green[2])
+        lit(0, 'blue')
+        lit(1, 'blue')
+        lit(2, 'green')
+        lit(3, 'green')
     if value == 5:
-        set_pixel(0, blue[0], blue[1], blue[2])
-        set_pixel(1, blue[0], blue[1], blue[2])
-        set_pixel(2, blue[0], blue[1], blue[2])
-        set_pixel(3, green[0], green[1], green[2])
-        set_pixel(4, green[0], green[1], green[2])
+        lit(0, 'blue')
+        lit(1, 'blue')
+        lit(2, 'green')
+        lit(3, 'green')
+        lit(4, 'green')
     if value == 6:
-        set_pixel(0, blue[0], blue[1], blue[2])
-        set_pixel(1, blue[0], blue[1], blue[2])
-        set_pixel(2, blue[0], blue[1], blue[2])
-        set_pixel(3, green[0], green[1], green[2])
-        set_pixel(4, green[0], green[1], green[2])
-        set_pixel(5, green[0], green[1], green[2])
+        lit(0, 'blue')
+        lit(1, 'blue')
+        lit(2, 'green')
+        lit(3, 'green')
+        lit(4, 'green')
+        lit(5, 'green')
     if value == 7:
-        set_pixel(0, blue[0], blue[1], blue[2])
-        set_pixel(1, blue[0], blue[1], blue[2])
-        set_pixel(2, blue[0], blue[1], blue[2])
-        set_pixel(3, green[0], green[1], green[2])
-        set_pixel(4, green[0], green[1], green[2])
-        set_pixel(5, green[0], green[1], green[2])
-        set_pixel(6, red[0], red[1], red[2])
+        lit(0, 'blue')
+        lit(1, 'blue')
+        lit(2, 'green')
+        lit(3, 'green')
+        lit(4, 'green')
+        lit(5, 'green')
+        lit(6, 'red')
     if value >= 8:
-        set_pixel(0, blue[0], blue[1], blue[2])
-        set_pixel(1, blue[0], blue[1], blue[2])
-        set_pixel(2, blue[0], blue[1], blue[2])
-        set_pixel(3, green[0], green[1], green[2])
-        set_pixel(4, green[0], green[1], green[2])
-        set_pixel(5, green[0], green[1], green[2])
-        set_pixel(6, red[0], red[1], red[2])
-        set_pixel(7, red[0], red[1], red[2])
+        lit(0, 'blue')
+        lit(1, 'blue')
+        lit(2, 'green')
+        lit(3, 'green')
+        lit(4, 'green')
+        lit(5, 'green')
+        lit(6, 'red')
+        lit(7, 'red')
     show()
 
 
