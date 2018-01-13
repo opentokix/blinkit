@@ -60,8 +60,8 @@ def update(value):
 
 
 def main():
-    for i in range(314):
-        value = math.sin(i / 100) * 4.5 + 4
+    for i in range(100):
+        value = math.sin(i / 5) * 4 + 4
         print value
         update(int(value))
         time.sleep(1)
