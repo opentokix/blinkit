@@ -32,34 +32,34 @@ def update(value):
     if value < 1:
         clear()
     if value == 1:
-        lit(0, 'blue')
+        lit(0, 'grey')
     if value == 2:
-        lit(0, 'blue')
+        lit(0, 'grey')
         lit(1, 'blue')
     if value == 3:
-        lit(0, 'blue')
+        lit(0, 'grey')
         lit(1, 'blue')
         lit(2, 'green')
     if value == 4:
-        lit(0, 'blue')
+        lit(0, 'grey')
         lit(1, 'blue')
         lit(2, 'green')
         lit(3, 'green')
     if value == 5:
-        lit(0, 'blue')
+        lit(0, 'grey')
         lit(1, 'blue')
         lit(2, 'green')
         lit(3, 'green')
         lit(4, 'green')
     if value == 6:
-        lit(0, 'blue')
+        lit(0, 'grey')
         lit(1, 'blue')
         lit(2, 'green')
         lit(3, 'green')
         lit(4, 'green')
         lit(5, 'green')
     if value == 7:
-        lit(0, 'blue')
+        lit(0, 'grey')
         lit(1, 'blue')
         lit(2, 'green')
         lit(3, 'green')
@@ -67,14 +67,14 @@ def update(value):
         lit(5, 'green')
         lit(6, 'red')
     if value >= 8:
-        lit(0, 'blue')
+        lit(0, 'grey')
         lit(1, 'blue')
         lit(2, 'green')
         lit(3, 'green')
         lit(4, 'green')
         lit(5, 'green')
         lit(6, 'red')
-        lit(7, 'red')
+        lit(7, 'white')
     show()
 
 
