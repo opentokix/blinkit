@@ -62,7 +62,7 @@ def update(value):
 
 def main():
     for i in range(2):
-        value = math.cos(i / 5) * 4.0 + 4.0
+        value = math.cos(i / 10) * 4.0 + 4.0
         print "%d: %f" % (i, value)
         update(int(value))
         time.sleep(0.3)
