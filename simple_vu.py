@@ -24,6 +24,8 @@ def lit(led, color):
         set_pixel(led, 20, 20, 20)
     if color == 'grey':
         set_pixel(led, 80, 80, 80)
+    if color == 'bright_red':
+        set_pixel(led, 255, 0, 0)
 
 
 def update(value):
